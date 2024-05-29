@@ -34,7 +34,7 @@ jobs:
         id: build-image
         env:
           ECR_REGISTRY: "381491943944.dkr.ecr.us-east-1.amazonaws.com"
-          ECR_REPOSITORY: "ride-duration-prediction-service"
+          ECR_REPOSITORY: "app_repo"
           IMAGE_TAG: latest
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
@@ -55,4 +55,4 @@ jobs:
           task-definition: ${{ steps.task-def-1.outputs.task-definition }}
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
-          wait-for-service-stability: true
+          wait-for-service-stability: false
