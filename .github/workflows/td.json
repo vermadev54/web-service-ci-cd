@@ -21,10 +21,9 @@
         }
     ],
     "family": "app",
-    "taskRoleArn": "arn:aws:iam::381491943944:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
-    "executionRoleArn": "arn:aws:iam::381491943944:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+    "taskRoleArn": "arn:aws:iam::381491943944:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::381491943944:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -54,7 +53,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2024-05-29T10:27:24.379Z",
+    "registeredAt": "2024-05-29T11:36:18.482Z",
     "registeredBy": "arn:aws:iam::381491943944:root",
     "tags": []
 }
